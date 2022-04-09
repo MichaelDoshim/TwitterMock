@@ -1,0 +1,30 @@
+.sidebarOption {
+    display:flex;        /* Changes the components(h2, text) to line up in a row*/
+    align-items: center; /* Makes everything vertically aligned perfectly*/
+    cursor: pointer;     /* Makes it into a pointer when hovered over*/
+}
+
+/* Inside the sidebarOption if there is a material UI icon then go through the css */
+.sidebarOption > .MuiSvgIcon-root {
+    padding: 20px;
+}
+
+/* Wherever there is a sidebar option and has a h2 tag underneath it*/
+.sidebarOption > h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* When hovering over the sidebar options change the color*/
+.sidebarOption:hover {
+    background-color: #e8f5fe;
+    border-radius: 30px; /* Gives the hovering background a round backround to it*/
+    color: var(--twitter-color); /* When hovering over the options the color changes to blue*/
+    transition: color 150ms ease-out; /* How long it takes to transition the change in color*/
+}
+
+/* If you're active(meaning you're on that page) then change the color of the text*/
+.sidebarOption--active {
+    color: var(--twitter-color);
+}

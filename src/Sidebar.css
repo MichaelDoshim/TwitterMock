@@ -1,0 +1,33 @@
+/* Makes the actual border of the sidebar to seperate it from the Feed component*/
+.sidebar {
+    border-right: 1px solid var(--twitter-background);
+    /* because the sidebar takes up 30% then the feed will take up 40% then the last component needs
+     to take up to 30% to add up to 100%*/
+    flex: 0.30; /* Making the sidebar always take up 30% of the screen*/
+    /* min-width: 250px; Making the sidebar not shrink below 250px */
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sidebar__twitterIcon {
+    /* You need the !important because you are overriding the MaterialUI themes*/
+    color: var(--twitter-color) !important;
+    font-size: 35px !important;
+    margin-left:20px;
+    margin-bottom: 20px;
+}
+
+.sidebar__tweet {
+    /* You need the !important because you are overriding the MaterialUI themes*/
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important; /* To get rid of all the capitol letters in the tweet button*/
+    border-radius: 30px !important;
+    /* width: 250px !important; */
+    height: 50px !important;
+    margin-top: 20px !important; 
+    /* margin-left: auto !important; */
+}
